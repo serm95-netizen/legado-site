@@ -1,89 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Legado Cycling Team</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legado Cycling - Team</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
-
-    header {
-      padding: 60px 20px;
-      background: linear-gradient(135deg,#111,#222);
-    }
-
-    h1 {
-      font-size: 48px;
-      margin: 0;
-      color: gold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1c1c1c;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    footer {
-      padding: 20px;
-      font-size: 14px;
-      opacity: 0.6;
-    }
-
-    a {
-      color: gold;
-      text-decoration: none;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header>
+    <h1>LEGADO CYCLING</h1>
+    <p>Ogden-Salt Lake City-Provo, UT • Jackson, WY • Road Racing</p>
 
-<header>
-  <h1>LEGADO CYCLING</h1>
-  <p>Ogden-Salt Lake City-Provo, UT • Jackson, WY • Road Racing </p>
-</header>
+    <nav>
+      <a href="index.html">About</a>
+      <a class="active" href="team.html">Team</a>
+      <a href="events.html">Events</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<section>
-  <div class="card">
-    <h2>About Us</h2>
-    <p>
-      Latin Roots • Salt Lake City Based • Competitive Cycling Team focused on building a strong local racing community • Everyone is welcome
-    </p>
+  <div class="container">
+    <main>
+      <section class="panel">
+        <h2>Team Members</h2>
+        <p class="muted">
+		2026 Team
+		</p>
+
+        <div class="grid">
+          <div class="card">
+			<img src="images/team/carlos.jpg" class="rider-photo">
+            <strong>Carlos Corona, Founder</strong>
+            <p class="muted">Role: All-Rounder • Cat 4</p>
+          </div>
+          <div class="card">
+            <img src="images/team/joseh.jpg" class="rider-photo">
+            <strong>Jose Hernandez, Founder</strong>
+            <p class="muted">Role: All-Rounder • Cat 3</p>
+          </div>
+          <div class="card">
+			<img src="images/team/santiago.jpg" class="rider-photo">
+            <strong>Santiago Rocha</strong>
+            <p class="muted">Role: Sprinter • Cat 3</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/honorio.jpg" class="rider-photo">
+            <strong>Honorio Machado</strong>
+            <p class="muted">Role: Team Lead - All-Rounder • Cat 2</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/josem.jpg" class="rider-photo">
+            <strong>Jose Medina Grajeda</strong>
+            <p class="muted">Role: All-rounder • Cat 3</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/franciscog.jpg" class="rider-photo">
+            <strong>Francisco Gonzalez</strong>
+            <p class="muted">Role: All-rounder • Cat 4</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/jorge.jpg" class="rider-photo">
+            <strong>Jorge Romero</strong>
+            <p class="muted">Role: All-rounder • Cat 3/4</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/franr.jpg" class="rider-photo">
+            <strong>Francisco Rodriguez</strong>
+            <p class="muted">Role: All-rounder • Cat 4</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/miguel.jpg" class="rider-photo">
+            <strong>Miguel Medina</strong>
+            <p class="muted">Role: All-rounder • Cat 4</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/joel.jpg" class="rider-photo">
+            <strong>Joel</strong>
+            <p class="muted">Role: All-rounder • Cat 4/5</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/ivan.jpg" class="rider-photo">
+            <strong>Ivan Barajas</strong>
+            <p class="muted">Role: All-rounder • Cat 4/5</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/enmanuel.jpg" class="rider-photo">
+            <strong>Enmanuel Gonzalez</strong>
+            <p class="muted">Role: All-rounder • Cat 4/5</p>
+          </div>
+		  <div class="card">
+			<img src="images/team/luis.jpg" class="rider-photo">
+            <strong>Luis Zamora</strong>
+            <p class="muted">Role: All-rounder • Cat 4</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2026 Legado Cycling Team</footer>
   </div>
-
-  <div class="card">
-    <h2>2026 Goals</h2>
-    <ul>
-      <li>Highest Racing Attendance by Team</li>
-      <li>Podiums</li>
-      <li>Team Growth</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: legado.team@gmail.com</p>
-    <p>Instagram: @legadocycling_team</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Legado Cycling Team
-</footer>
-
 </body>
 </html>

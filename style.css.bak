@@ -77,12 +77,12 @@ nav a{
 
 nav a:hover{
   transform: translateY(-1px);
-  border-color: rgba(25,255,255,.22);
+  border-color: rgba(255,255,255,.22);
 }
 
 nav a.active{
-  background: rgba(212,175,55,.15);
-  border-color: rgba(212,175,55,.55);
+  background: rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.55);
   color: var(--text);
 }
 
@@ -119,6 +119,9 @@ h2{
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 14px;
+  font-family: 'Anton';
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 
 footer{
@@ -127,3 +130,13 @@ footer{
   color: rgba(255,255,255,.55);
   font-size: 14px;
 }
+
+.rider-photo{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+}
+
