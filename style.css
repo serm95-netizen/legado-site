@@ -1,0 +1,120 @@
+:root{
+  --bg:#111;
+  --panel:#1c1c1c;
+  --panel2:#161616;
+  --text:#ffffff;
+  --muted:rgba(255,255,255,.75);
+  --gold:#d4af37;
+  --border:rgba(255,255,255,.10);
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: Arial, sans-serif;
+}
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+header{
+  padding: 64px 18px 24px;
+  background: linear-gradient(135deg,#0f0f0f,#222);
+  border-bottom: 1px solid var(--border);
+  text-align:center;
+}
+
+h1{
+  font-family:'Anton', sans-serif;
+  font-size: clamp(44px, 7vw, 74px);
+  margin:0;
+  letter-spacing: 3px;
+  color: var(--gold);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+header p{
+  margin: 10px 0 0;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+nav{
+  margin-top: 16px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+nav a{
+  display:inline-block;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration:none;
+  font-weight: 700;
+  letter-spacing:.4px;
+  transition: transform .05s ease, border-color .2s ease, background .2s ease;
+}
+
+nav a:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,.22);
+}
+
+nav a.active{
+  background: rgba(212,175,55,.15);
+  border-color: rgba(212,175,55,.55);
+  color: var(--gold);
+}
+
+main{
+  margin-top: 18px;
+}
+
+.panel{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+h2{
+  font-family:'Anton', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: var(--gold);
+}
+
+.muted{ color: var(--muted); }
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.card{
+  background: #151515;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+footer{
+  text-align:center;
+  padding: 24px 0 40px;
+  color: rgba(255,255,255,.55);
+  font-size: 14px;
+}
