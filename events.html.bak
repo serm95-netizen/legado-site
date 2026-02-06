@@ -1,89 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Legado Cycling Team</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legado Cycling - Events</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
-
-    header {
-      padding: 60px 20px;
-      background: linear-gradient(135deg,#111,#222);
-    }
-
-    h1 {
-      font-size: 48px;
-      margin: 0;
-      color: gold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1c1c1c;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    footer {
-      padding: 20px;
-      font-size: 14px;
-      opacity: 0.6;
-    }
-
-    a {
-      color: gold;
-      text-decoration: none;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header>
+    <h1>LEGADO CYCLING</h1>
+    <p>Ogden-Salt Lake City-Provo, UT • Jackson, WY • Road Racing</p>
 
-<header>
-  <h1>LEGADO CYCLING</h1>
-  <p>Ogden-Salt Lake City-Provo, UT • Jackson, WY • Road Racing </p>
-</header>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="team.html">Team</a>
+      <a class="active" href="events.html">Events</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<section>
-  <div class="card">
-    <h2>About Us</h2>
-    <p>
-      Latin Roots • Salt Lake City Based • Competitive Cycling Team focused on building a strong local racing community • Everyone is welcome
-    </p>
+  <div class="container">
+    <main>
+      <section class="panel">
+        <h2>Events</h2>
+        <p class="muted">Group rides, workouts, and race nights.</p>
+
+        <div class="grid">
+          <div class="card">
+            <strong>Tuesday Crit</strong>
+            <p class="muted">Fast + technical. Bring tactics.</p>
+          </div>
+          <div class="card">
+            <strong>Weekend Long Ride</strong>
+            <p class="muted">Endurance + structured pulls.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2026 Legado Cycling Team</footer>
   </div>
-
-  <div class="card">
-    <h2>2026 Goals</h2>
-    <ul>
-      <li>Highest Racing Attendance by Team</li>
-      <li>Podiums</li>
-      <li>Team Growth</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: legado.team@gmail.com</p>
-    <p>Instagram: @legadocycling_team</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Legado Cycling Team
-</footer>
-
 </body>
 </html>

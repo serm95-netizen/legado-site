@@ -17,7 +17,7 @@
     <nav>
       <a href="index.html">About</a>
       <a class="active" href="team.html">Team</a>
-      <a href="events.html">Events</a>
+      <a href="sponsors.html">Sponsors</a>
       <a href="calendar.html">Calendar</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -54,7 +54,7 @@
           </div>
 		  <div class="card">
 			<img src="images/team/josem.jpg" class="rider-photo">
-            <h2>Jose Medina Grajeda</h2>
+            <h2>Jose Grajeda Medina</h2>
             <p class="muted">Role: All-rounder • Cat 3</p>
           </div>
 		  <div class="card">

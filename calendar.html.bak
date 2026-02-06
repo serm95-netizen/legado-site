@@ -1,89 +1,651 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Legado Cycling Team</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legado Cycling - Calendar</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
-
-    header {
-      padding: 60px 20px;
-      background: linear-gradient(135deg,#111,#222);
-    }
-
-    h1 {
-      font-size: 48px;
-      margin: 0;
-      color: gold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1c1c1c;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    footer {
-      padding: 20px;
-      font-size: 14px;
-      opacity: 0.6;
-    }
-
-    a {
-      color: gold;
-      text-decoration: none;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header>
+    <h1>LEGADO CYCLING</h1>
+    <p>Ogden-Salt Lake City-Provo, UT • Jackson, WY • Road Racing</p>
 
-<header>
-  <h1>LEGADO CYCLING</h1>
-  <p>Ogden-Salt Lake City-Provo, UT • Jackson, WY • Road Racing </p>
-</header>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a class="active" href="calendar.html">Calendar</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<section>
-  <div class="card">
-    <h2>About Us</h2>
-    <p>
-      Latin Roots • Salt Lake City Based • Competitive Cycling Team focused on building a strong local racing community • Everyone is welcome
-    </p>
+  <div class="container">
+    <main>
+      <section class="panel">
+        <h2>Racing Calendar</h2>
+		<div class="calendar-month">
+		  <div class="calendar-title">
+			<h3>April 2026</h3>
+			<span class="badge">Sun → Sat</span>
+		  </div>
+
+		  <div class="calendar-grid">
+			<!-- DOW header -->
+			<div class="calendar-dow">Sun</div>
+			<div class="calendar-dow">Mon</div>
+			<div class="calendar-dow">Tue</div>
+			<div class="calendar-dow">Wed</div>
+			<div class="calendar-dow">Thu</div>
+			<div class="calendar-dow">Fri</div>
+			<div class="calendar-dow">Sat</div>
+
+			<!-- April 1, 2026 is a Wednesday, so 3 empty cells (Sun/Mon/Tue) -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+
+			<!-- Wed -->
+			<div class="day">
+			  <div class="day-num"><span>1</span></div>
+			</div>
+
+			<!-- Thu -->
+			<div class="day">
+			  <div class="day-num"><span>2</span></div>
+			</div>
+
+			<!-- Fri -->
+			<div class="day">
+			  <div class="day-num"><span>3</span></div>
+			</div>
+
+			<!-- Sat 4 -->
+			<div class="day">
+			  <div class="day-num"><span>4</span></div>
+			  <div class="race">
+				<strong>cllectve cc UCL — Crit #1</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<!-- Sun 5 -->
+			<div class="day"><div class="day-num"><span>5</span></div></div>
+			<div class="day"><div class="day-num"><span>6</span></div></div>
+			<div class="day"><div class="day-num"><span>7</span></div></div>
+			<div class="day"><div class="day-num"><span>8</span></div></div>
+			<div class="day"><div class="day-num"><span>9</span></div></div>
+			<div class="day"><div class="day-num"><span>10</span></div></div>
+			<div class="day"><div class="day-num"><span>11</span></div></div>
+
+			<div class="day"><div class="day-num"><span>12</span></div></div>
+			<div class="day"><div class="day-num"><span>13</span></div></div>
+			<div class="day"><div class="day-num"><span>14</span></div></div>
+			<div class="day"><div class="day-num"><span>15</span></div></div>
+			<div class="day"><div class="day-num"><span>16</span></div></div>
+			<div class="day"><div class="day-num"><span>17</span></div></div>
+
+			<!-- Sat 18 -->
+			<div class="day">
+			  <div class="day-num"><span>18</span></div>
+			  <div class="race">
+				<strong>cllectve cc UCL — Crit #2</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>19</span></div></div>
+			<div class="day"><div class="day-num"><span>20</span></div></div>
+			<div class="day"><div class="day-num"><span>21</span></div></div>
+			<div class="day"><div class="day-num"><span>22</span></div></div>
+			<div class="day"><div class="day-num"><span>23</span></div></div>
+			<div class="day"><div class="day-num"><span>24</span></div></div>
+
+			<!-- Sat 25 -->
+			<div class="day">
+			  <div class="day-num"><span>25</span></div>
+			  <div class="race">
+				<strong>cllectve cc UCL — Crit #3</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<!-- Sun 26 -->
+			<div class="day">
+			  <div class="day-num"><span>26</span></div>
+			  <div class="race">
+				<strong>Peak State Fit UCL — Road Race #1</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>27</span></div></div>
+
+			<!-- Tue 28 -->
+			<div class="day">
+			  <div class="day-num"><span>28</span></div>
+			  <div class="race">
+				<strong>cllectve cc UCL — Crit #4</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>29</span></div></div>
+
+			<!-- Thu 30 -->
+			<div class="day">
+			  <div class="day-num"><span>30</span></div>
+			  <div class="race">
+				<strong>BOLT Skin+Shave TTL — TT #1</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<!-- April ends on Thu, so fill Fri/Sat as empty -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+		  </div>
+		</div>
+
+        <div class="calendar-month">
+		  <div class="calendar-title">
+			<h3>May 2026</h3>
+			<span class="badge">Sun → Sat</span>
+		  </div>
+
+		  <div class="calendar-grid">
+			<!-- DOW header -->
+			<div class="calendar-dow">Sun</div>
+			<div class="calendar-dow">Mon</div>
+			<div class="calendar-dow">Tue</div>
+			<div class="calendar-dow">Wed</div>
+			<div class="calendar-dow">Thu</div>
+			<div class="calendar-dow">Fri</div>
+			<div class="calendar-dow">Sat</div>
+
+			<!-- May 1, 2026 is Friday -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+
+			<!-- Fri 1 -->
+			<div class="day"><div class="day-num"><span>1</span></div></div>
+
+			<!-- Sat 2 (two races same day) -->
+			<div class="day">
+			  <div class="day-num"><span>2</span></div>
+			  <div class="race">
+				<strong>Goshen Circuit Race — Road Race</strong>
+				<span class="meta">Traverse Ridge, UT</span>
+			  </div>
+			  <div class="race">
+				<strong>BOLT Skin+Shave UHCL — Hill Climb #1</strong>
+				<span class="meta">Traverse Ridge, UT</span>
+			  </div>
+			</div>
+
+			<!-- Sun 3 -->
+			<div class="day">
+			  <div class="day-num"><span>3</span></div>
+			  <div class="race">
+				<strong>Peak State Fit UCL — Road Race #2</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>4</span></div></div>
+
+			<!-- Tue 5 -->
+			<div class="day">
+			  <div class="day-num"><span>5</span></div>
+			  <div class="race">
+				<strong>cllectve cc UCL — Crit #5</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>6</span></div></div>
+			<div class="day"><div class="day-num"><span>7</span></div></div>
+			<div class="day"><div class="day-num"><span>8</span></div></div>
+
+			<!-- Sat 9 -->
+			<div class="day">
+			  <div class="day-num"><span>9</span></div>
+			  <div class="race">
+				<strong>Bear Lake Classic — Road Race</strong>
+				<span class="meta">Bear Lake, UT</span>
+			  </div>
+			</div>
+
+			<!-- Sun 10 -->
+			<div class="day">
+			  <div class="day-num"><span>10</span></div>
+			  <div class="race">
+				<strong>Peak State Fit UCL — Road Race #3</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>11</span></div></div>
+
+			<!-- Tue 12 -->
+			<div class="day">
+			  <div class="day-num"><span>12</span></div>
+			  <div class="race">
+				<strong>cllectve cc UCL — Crit #6</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>13</span></div></div>
+
+			<!-- Thu 14 -->
+			<div class="day">
+			  <div class="day-num"><span>14</span></div>
+			  <div class="race">
+				<strong>BOLT Skin+Shave TTL — TT #2</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>15</span></div></div>
+			<div class="day"><div class="day-num"><span>16</span></div></div>
+
+			<div class="day"><div class="day-num"><span>17</span></div></div>
+			<div class="day"><div class="day-num"><span>18</span></div></div>
+
+			<!-- Tue 19 -->
+			<div class="day">
+			  <div class="day-num"><span>19</span></div>
+			  <div class="race">
+				<strong>cllectve cc UCL — Crit #7</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>20</span></div></div>
+			<div class="day"><div class="day-num"><span>21</span></div></div>
+			<div class="day"><div class="day-num"><span>22</span></div></div>
+
+			<!-- Sat 23 (two races same day) -->
+			<div class="day">
+			  <div class="day-num"><span>23</span></div>
+			  <div class="race">
+				<strong>BOLT Skin+Shave UHCL — Hill Climb #2</strong>
+				<span class="meta">Snowbird, UT</span>
+			  </div>
+			  <div class="race">
+				<strong>East Canyon — Road Race</strong>
+				<span class="meta">Henefer, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>24</span></div></div>
+			<div class="day"><div class="day-num"><span>25</span></div></div>
+
+			<!-- Tue 26 -->
+			<div class="day">
+			  <div class="day-num"><span>26</span></div>
+			  <div class="race">
+				<strong>cllectve cc UCL — Crit #8 FINAL</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>27</span></div></div>
+
+			<!-- Thu 28 -->
+			<div class="day">
+			  <div class="day-num"><span>28</span></div>
+			  <div class="race">
+				<strong>BOLT Skin+Shave TTL — TT #3</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>29</span></div></div>
+
+			<!-- Sat 30 -->
+			<div class="day">
+			  <div class="day-num"><span>30</span></div>
+			  <div class="race">
+				<strong>West Mountain — Road Race</strong>
+				<span class="meta">West Mountain, UT</span>
+			  </div>
+			</div>
+
+			<!-- Sun 31 -->
+			<div class="day">
+			  <div class="day-num"><span>31</span></div>
+			</div>
+
+			<!-- Fill remaining days of last week (Mon–Sat) as empty to keep grid rectangular -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+		  </div>
+		</div>
+
+		<div class="calendar-month">
+		  <div class="calendar-title">
+			<h3>June 2026</h3>
+			<span class="badge">Sun → Sat</span>
+		  </div>
+
+		  <div class="calendar-grid">
+			<div class="calendar-dow">Sun</div><div class="calendar-dow">Mon</div><div class="calendar-dow">Tue</div>
+			<div class="calendar-dow">Wed</div><div class="calendar-dow">Thu</div><div class="calendar-dow">Fri</div><div class="calendar-dow">Sat</div>
+
+			<!-- June 1 is Mon -->
+			<div class="day empty"></div>
+			<div class="day"><div class="day-num"><span>1</span></div></div>
+			<div class="day"><div class="day-num"><span>2</span></div></div>
+			<div class="day"><div class="day-num"><span>3</span></div></div>
+			<div class="day"><div class="day-num"><span>4</span></div></div>
+			<div class="day"><div class="day-num"><span>5</span></div></div>
+			<div class="day"><div class="day-num"><span>6</span></div></div>
+
+			<div class="day"><div class="day-num"><span>7</span></div></div>
+			<div class="day"><div class="day-num"><span>8</span></div></div>
+			<div class="day"><div class="day-num"><span>9</span></div></div>
+			<div class="day"><div class="day-num"><span>10</span></div></div>
+			<div class="day"><div class="day-num"><span>11</span></div></div>
+			<div class="day"><div class="day-num"><span>12</span></div></div>
+
+			<!-- Sat 13 -->
+			<div class="day">
+			  <div class="day-num"><span>13</span></div>
+			  <div class="race">
+				<strong>BOLT Skin+Shave UHCL — Hill Climb #3</strong>
+				<span class="meta">Emigration Canyon, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>14</span></div></div>
+			<div class="day"><div class="day-num"><span>15</span></div></div>
+			<div class="day"><div class="day-num"><span>16</span></div></div>
+			<div class="day"><div class="day-num"><span>17</span></div></div>
+			<div class="day"><div class="day-num"><span>18</span></div></div>
+			<div class="day"><div class="day-num"><span>19</span></div></div>
+			<div class="day"><div class="day-num"><span>20</span></div></div>
+
+			<div class="day"><div class="day-num"><span>21</span></div></div>
+			<div class="day"><div class="day-num"><span>22</span></div></div>
+			<div class="day"><div class="day-num"><span>23</span></div></div>
+			<div class="day"><div class="day-num"><span>24</span></div></div>
+			<div class="day"><div class="day-num"><span>25</span></div></div>
+			<div class="day"><div class="day-num"><span>26</span></div></div>
+			<div class="day"><div class="day-num"><span>27</span></div></div>
+
+			<div class="day"><div class="day-num"><span>28</span></div></div>
+			<div class="day"><div class="day-num"><span>29</span></div></div>
+			<div class="day"><div class="day-num"><span>30</span></div></div>
+
+			<!-- June ends on Tue, fill Wed–Sat -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+		  </div>
+		</div>
+		
+		<div class="calendar-month">
+		  <div class="calendar-title">
+			<h3>July 2026</h3>
+			<span class="badge">Sun → Sat</span>
+		  </div>
+
+		  <div class="calendar-grid">
+			<div class="calendar-dow">Sun</div><div class="calendar-dow">Mon</div><div class="calendar-dow">Tue</div>
+			<div class="calendar-dow">Wed</div><div class="calendar-dow">Thu</div><div class="calendar-dow">Fri</div><div class="calendar-dow">Sat</div>
+
+			<!-- July 1 is Wed -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+
+			<div class="day"><div class="day-num"><span>1</span></div></div>
+			<div class="day"><div class="day-num"><span>2</span></div></div>
+			<div class="day"><div class="day-num"><span>3</span></div></div>
+			<div class="day"><div class="day-num"><span>4</span></div></div>
+
+			<div class="day"><div class="day-num"><span>5</span></div></div>
+			<div class="day"><div class="day-num"><span>6</span></div></div>
+			<div class="day"><div class="day-num"><span>7</span></div></div>
+			<div class="day"><div class="day-num"><span>8</span></div></div>
+			<div class="day"><div class="day-num"><span>9</span></div></div>
+			<div class="day"><div class="day-num"><span>10</span></div></div>
+
+			<!-- Sat 11 (two races) -->
+			<div class="day">
+			  <div class="day-num"><span>11</span></div>
+			  <div class="race">
+				<strong>Cache Gran Fondo</strong>
+				<span class="meta">Logan, UT</span>
+			  </div>
+			  <div class="race">
+				<strong>Boise Twilight Criterium</strong>
+				<span class="meta">Boise, ID</span>
+			  </div>
+			</div>
+
+			<!-- Sun 12 -->
+			<div class="day">
+			  <div class="day-num"><span>12</span></div>
+			  <div class="race">
+				<strong>Bogus Basin</strong>
+				<span class="meta">Boise, ID</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>13</span></div></div>
+			<div class="day"><div class="day-num"><span>14</span></div></div>
+			<div class="day"><div class="day-num"><span>15</span></div></div>
+			<div class="day"><div class="day-num"><span>16</span></div></div>
+			<div class="day"><div class="day-num"><span>17</span></div></div>
+
+			<!-- Sat 18 -->
+			<div class="day">
+			  <div class="day-num"><span>18</span></div>
+			  <div class="race">
+				<strong>Utah Crit State Championship</strong>
+				<span class="meta">Sugarhouse Park, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>19</span></div></div>
+			<div class="day"><div class="day-num"><span>20</span></div></div>
+			<div class="day"><div class="day-num"><span>21</span></div></div>
+			<div class="day"><div class="day-num"><span>22</span></div></div>
+			<div class="day"><div class="day-num"><span>23</span></div></div>
+			<div class="day"><div class="day-num"><span>24</span></div></div>
+			<div class="day"><div class="day-num"><span>25</span></div></div>
+
+			<div class="day"><div class="day-num"><span>26</span></div></div>
+			<div class="day"><div class="day-num"><span>27</span></div></div>
+			<div class="day"><div class="day-num"><span>28</span></div></div>
+			<div class="day"><div class="day-num"><span>29</span></div></div>
+			<div class="day"><div class="day-num"><span>30</span></div></div>
+			<div class="day"><div class="day-num"><span>31</span></div></div>
+
+			<!-- July ends Fri, fill Sat -->
+			<div class="day empty"></div>
+		  </div>
+		</div>
+
+		<div class="calendar-month">
+		  <div class="calendar-title">
+			<h3>August 2026</h3>
+			<span class="badge">Sun → Sat</span>
+		  </div>
+
+		  <div class="calendar-grid">
+			<div class="calendar-dow">Sun</div><div class="calendar-dow">Mon</div><div class="calendar-dow">Tue</div>
+			<div class="calendar-dow">Wed</div><div class="calendar-dow">Thu</div><div class="calendar-dow">Fri</div><div class="calendar-dow">Sat</div>
+
+			<!-- Aug 1 is Sat -->
+			<div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+			<div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+
+			<div class="day">
+			  <div class="day-num"><span>1</span></div>
+			  <div class="race">
+				<strong>Mirror Lake 150</strong>
+				<span class="meta">Kamas, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>2</span></div></div>
+			<div class="day"><div class="day-num"><span>3</span></div></div>
+			<div class="day"><div class="day-num"><span>4</span></div></div>
+			<div class="day"><div class="day-num"><span>5</span></div></div>
+			<div class="day"><div class="day-num"><span>6</span></div></div>
+			<div class="day"><div class="day-num"><span>7</span></div></div>
+			<div class="day"><div class="day-num"><span>8</span></div></div>
+
+			<div class="day"><div class="day-num"><span>9</span></div></div>
+			<div class="day"><div class="day-num"><span>10</span></div></div>
+			<div class="day"><div class="day-num"><span>11</span></div></div>
+			<div class="day"><div class="day-num"><span>12</span></div></div>
+			<div class="day"><div class="day-num"><span>13</span></div></div>
+
+			<!-- Fri 14 -->
+			<div class="day">
+			  <div class="day-num"><span>14</span></div>
+			  <div class="race">
+				<strong>Salt Lake Criterium</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<!-- Sat 15 (two events) -->
+			<div class="day">
+			  <div class="day-num"><span>15</span></div>
+			  <div class="race">
+				<strong>Salt Lake Criterium</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			  <div class="race">
+				<strong>Salt Lake Criterium Fondo</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<!-- Sun 16 -->
+			<div class="day">
+			  <div class="day-num"><span>16</span></div>
+			  <div class="race">
+				<strong>Salt Lake Criterium</strong>
+				<span class="meta">SLC, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>17</span></div></div>
+			<div class="day"><div class="day-num"><span>18</span></div></div>
+			<div class="day"><div class="day-num"><span>19</span></div></div>
+			<div class="day"><div class="day-num"><span>20</span></div></div>
+			<div class="day"><div class="day-num"><span>21</span></div></div>
+			<div class="day"><div class="day-num"><span>22</span></div></div>
+
+			<div class="day"><div class="day-num"><span>23</span></div></div>
+			<div class="day"><div class="day-num"><span>24</span></div></div>
+			<div class="day"><div class="day-num"><span>25</span></div></div>
+			<div class="day"><div class="day-num"><span>26</span></div></div>
+			<div class="day"><div class="day-num"><span>27</span></div></div>
+			<div class="day"><div class="day-num"><span>28</span></div></div>
+			<div class="day"><div class="day-num"><span>29</span></div></div>
+
+			<div class="day"><div class="day-num"><span>30</span></div></div>
+			<div class="day"><div class="day-num"><span>31</span></div></div>
+
+			<!-- August ends Mon, fill Tue–Sat -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+		  </div>
+		</div>
+
+
+
+		<div class="calendar-month">
+		  <div class="calendar-title">
+			<h3>September 2026</h3>
+			<span class="badge">Sun → Sat</span>
+		  </div>
+
+		  <div class="calendar-grid">
+			<div class="calendar-dow">Sun</div><div class="calendar-dow">Mon</div><div class="calendar-dow">Tue</div>
+			<div class="calendar-dow">Wed</div><div class="calendar-dow">Thu</div><div class="calendar-dow">Fri</div><div class="calendar-dow">Sat</div>
+
+			<!-- Sep 1 is Tue -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+
+			<div class="day"><div class="day-num"><span>1</span></div></div>
+			<div class="day"><div class="day-num"><span>2</span></div></div>
+			<div class="day"><div class="day-num"><span>3</span></div></div>
+			<div class="day"><div class="day-num"><span>4</span></div></div>
+			<div class="day"><div class="day-num"><span>5</span></div></div>
+
+			<div class="day"><div class="day-num"><span>6</span></div></div>
+			<div class="day"><div class="day-num"><span>7</span></div></div>
+			<div class="day"><div class="day-num"><span>8</span></div></div>
+			<div class="day"><div class="day-num"><span>9</span></div></div>
+			<div class="day"><div class="day-num"><span>10</span></div></div>
+			<div class="day"><div class="day-num"><span>11</span></div></div>
+
+			<!-- Sat 12 -->
+			<div class="day">
+			  <div class="day-num"><span>12</span></div>
+			  <div class="race">
+				<strong>LoToJa Classic</strong>
+				<span class="meta">Logan, UT</span>
+			  </div>
+			</div>
+
+			<div class="day"><div class="day-num"><span>13</span></div></div>
+			<div class="day"><div class="day-num"><span>14</span></div></div>
+			<div class="day"><div class="day-num"><span>15</span></div></div>
+			<div class="day"><div class="day-num"><span>16</span></div></div>
+			<div class="day"><div class="day-num"><span>17</span></div></div>
+			<div class="day"><div class="day-num"><span>18</span></div></div>
+			<div class="day"><div class="day-num"><span>19</span></div></div>
+
+			<div class="day"><div class="day-num"><span>20</span></div></div>
+			<div class="day"><div class="day-num"><span>21</span></div></div>
+			<div class="day"><div class="day-num"><span>22</span></div></div>
+			<div class="day"><div class="day-num"><span>23</span></div></div>
+			<div class="day"><div class="day-num"><span>24</span></div></div>
+			<div class="day"><div class="day-num"><span>25</span></div></div>
+			<div class="day"><div class="day-num"><span>26</span></div></div>
+
+			<div class="day"><div class="day-num"><span>27</span></div></div>
+			<div class="day"><div class="day-num"><span>28</span></div></div>
+			<div class="day"><div class="day-num"><span>29</span></div></div>
+			<div class="day"><div class="day-num"><span>30</span></div></div>
+
+			<!-- September ends Wed, fill Thu–Sat -->
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+			<div class="day empty"></div>
+		  </div>
+		</div>
+
+		
+      </section>
+    </main>
+
+    <footer>© 2026 Legado Cycling Team</footer>
   </div>
-
-  <div class="card">
-    <h2>2026 Goals</h2>
-    <ul>
-      <li>Highest Racing Attendance by Team</li>
-      <li>Podiums</li>
-      <li>Team Growth</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: legado.team@gmail.com</p>
-    <p>Instagram: @legadocycling_team</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Legado Cycling Team
-</footer>
-
 </body>
 </html>

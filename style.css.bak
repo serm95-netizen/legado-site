@@ -1,11 +1,11 @@
 :root{
-  --bg:#111;
-  --panel:#1c1c1c;
+  --bg:#ffffff;
+  --panel:#CDCDCD;
   --panel2:#161616;
-  --text:#ffffff;
-  --muted:rgba(255,255,255,.75);
+  --text:#583255;
+  --muted:rgba(0,0,0,.75);
   --gold:#d4af37;
-  --border:rgba(255,255,255,.10);
+  --border:rgba(88,50,85,.90);
 }
 
 *{ box-sizing: border-box; }
@@ -23,13 +23,6 @@ body{
   padding: 18px;
 }
 
-header{
-  padding: 64px 18px 24px;
-  background: linear-gradient(135deg,#0f0f0f,#222);
-  border-bottom: 1px solid var(--border);
-  text-align:center;
-}
-
 h1{
   font-family:'Anton', sans-serif;
   font-size: clamp(44px, 7vw, 74px);
@@ -43,17 +36,19 @@ h1{
 header{
   padding: 90px 18px 60px;
 
+  /* Background image temporarily disabled */
+  /*
   background-image: 
-	linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
-	url("images/Stardust_upscaled.jpg");
+    linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+    url("images/StardustPurple.png");
+  */
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #181818, #222);
 
   border-bottom: 1px solid var(--border);
   text-align:center;
 }
+
 
 nav{
   margin-top: 16px;
@@ -115,13 +110,10 @@ h2{
 }
 
 .card{
-  background: #151515;
+  background: #FFFFFF;
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 14px;
-  font-family: 'Anton';
-  letter-spacing: 1px;
-  font-size: 15px;
 }
 
 footer{
@@ -138,5 +130,115 @@ footer{
   border-radius: 12px;
   margin-bottom: 10px;
   border: 1px solid var(--border);
+}
+
+.sponsor-photo{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+}
+
+/* ===== Calendar Grid ===== */
+.calendar-month {
+  margin-top: 14px;
+}
+
+.calendar-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 10px;
+}
+
+.calendar-title h3{
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(rgba(0,0,0,.75));
+  font-size: 28px;
+}
+
+.calendar-grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-dow{
+  text-align: center;
+  padding: 10px 8px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #ffffff;
+  color: var(--muted);
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+.day{
+  min-height: 120px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.day.empty{
+  opacity: 0.35;
+  background: transparent;
+}
+
+.day-num{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.day-num span{
+  font-weight: 900;
+}
+
+.badge{
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.race{
+  border: 1px solid rgba(212,175,55,.35);
+  background: rgba(212,175,55,.10);
+  border-radius: 12px;
+  padding: 8px 9px;
+  line-height: 1.2;
+}
+
+.race strong{
+  display:block;
+  font-size: 13px;
+  color: var(rgba(0,0,0,.75));
+  letter-spacing: .2px;
+}
+
+.race .meta{
+  display:block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(rgba(0,0,0,.75));
+}
+
+/* Small screens: reduce height a bit */
+@media (max-width: 520px){
+  .day{ min-height: 98px; }
 }
 
