@@ -319,3 +319,79 @@ footer{
   .calendar-dow, .day{ width: 72px; }
 }
 
+/* ===== Calendar: mobile layout that DOES NOT distort ===== */
+.calendar-month, .calendar-title, .calendar-grid { max-width: 100%; }
+
+.calendar-title { flex-wrap: wrap; }
+.calendar-title h3 { max-width: 100%; }
+
+/* Phone sizing */
+@media (max-width: 520px){
+
+  /* Prevent the panel from letting children force overflow */
+  .panel { overflow: hidden; }
+
+  /* Month title: smaller so it doesn't push off-screen */
+  .calendar-title h3{
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  /* Keep 7 columns, but tighter spacing so it fits */
+  .calendar-grid{
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+  }
+
+  /* DOW headers: consistent shape */
+  .calendar-dow{
+    padding: 6px 2px;
+    font-size: 11px;
+    border-radius: 10px;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  /* Days: consistent shape */
+  .day{
+    min-height: 86px;
+    padding: 6px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .day-num span{
+    font-size: 12px;
+  }
+
+  /* Race cards: compact */
+  .race{
+    padding: 5px 6px;
+    border-radius: 10px;
+  }
+
+  .race strong{
+    font-size: 11px;
+    line-height: 1.1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;        /* show up to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .race .meta{
+    display: none; /* hide location on tiny screens */
+  }
+}
+
+/* Super tiny screens: horizontal scroll fallback */
+@media (max-width: 380px){
+  .calendar-grid{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    grid-template-columns: repeat(7, 72px);
+  }
+
+  .calendar-dow, .day{ width: 72px; }
+}
