@@ -1,11 +1,11 @@
 :root{
   --bg:#ffffff;
-  --panel:#CDCDCD;
+  --panel:#ECECEC;
   --panel2:#161616;
-  --text:#583255;
+  --text:#808080;
   --muted:rgba(0,0,0,.75);
   --gold:#d4af37;
-  --border:rgba(88,50,85,.90);
+  --border:#747474;
 }
 
 *{ box-sizing: border-box; }
@@ -34,14 +34,10 @@ h1{
 }
 
 header{
-  padding: 90px 18px 60px;
+  padding: 90px 18px 30px;
 
-  /* Background image temporarily disabled */
-  /*
-  background-image: 
-    linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
-    url("images/StardustPurple.png");
-  */
+  /*background-image: 
+    url("images/CV2026.png");*/
 
   background-color: var(--panel);
 
@@ -72,12 +68,12 @@ nav a{
 
 nav a:hover{
   transform: translateY(-1px);
-  border-color: rgba(255,255,255,.22);
+  border-color: #C87A95;
 }
 
 nav a.active{
-  background: rgba(255,255,255,.15);
-  border-color: rgba(255,255,255,.55);
+  background: rgba(200,122,148,.15);
+  border-color: #C87A95;
   color: var(--text);
 }
 
@@ -119,7 +115,7 @@ h2{
 footer{
   text-align:center;
   padding: 24px 0 40px;
-  color: rgba(255,255,255,.55);
+  color: --text;
   font-size: 14px;
 }
 
@@ -216,8 +212,8 @@ footer{
 }
 
 .race{
-  border: 1px solid rgba(212,175,55,.35);
-  background: rgba(212,175,55,.10);
+  border: 1px solid rgba(200,122,149,.35);
+  background: rgba(200,122,149,.10);
   border-radius: 12px;
   padding: 8px 9px;
   line-height: 1.2;
