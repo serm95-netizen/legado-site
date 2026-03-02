@@ -36,15 +36,27 @@ h1{
 header{
   padding: 90px 18px 30px;
 
-  /*background-image: 
-    url("images/CV2026.png");*/
-
-  background-color: var(--panel);
+  background-image: url("images/CV2026.png");
+  background-size: cover;
+  background-position: center;
 
   border-bottom: 1px solid var(--border);
-  text-align:center;
+  text-align: center;
 }
 
+.header-content{
+  display: inline-block;
+  padding: 18px 28px 20px;
+  background: rgba(255,255,255,0.85); /* translucent white */
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.logo-link{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}	
 
 nav{
   margin-top: 16px;
@@ -135,6 +147,23 @@ footer{
   border-radius: 12px;
   margin-bottom: 10px;
   border: 1px solid var(--border);
+}
+
+.sponsor-cta{
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .6px;
+  transition: background .2s ease, transform .1s ease;
+}
+
+.sponsor-cta:hover{
+  background: rgba(0,0,0,.05);
+  transform: translateY(-1px);
 }
 
 /*  Calendar Grid */
